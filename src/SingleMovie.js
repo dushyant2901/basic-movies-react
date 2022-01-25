@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const SingleMovie = () => {
   const { id } = useParams();
   const [loading, setLoading] = useState(true);
-  const [movieData, setMovieData] = useState();
+  const [movieData, setMovieData] = useState({});
   const [error, setError] = useState({ show: false, msg: "" });
 
   const fetchMovieData = async (url) => {
